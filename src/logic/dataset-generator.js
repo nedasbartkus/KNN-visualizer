@@ -2,7 +2,7 @@ var dataset = [];
 
 function createPoint(minX, minY, maxX, maxY, label) {
   const point = {
-    x: Math.floor(Math.random() * maxX + minX),
+    x: Math.floor(Math.random() * (maxX - minX) + minX),
     y: Math.floor(Math.random() * maxY + minY),
     label: label
   };
