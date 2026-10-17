@@ -3,10 +3,10 @@ var dataset = [];
 function createPoint(minX, minY, maxX, maxY, label) {
   const point = {
     x: Math.floor(Math.random() * (maxX - minX) + minX),
-    y: Math.floor(Math.random() * maxY + minY),
+    y: Math.floor(Math.random() * (maxY - minY) + minY),
     label: label
   };
-  return point
+  return point;
 }
 
 function generateDataset(nPoints, nClusters) {
@@ -22,5 +22,3 @@ function generateDataset(nPoints, nClusters) {
   }
   return dataset;
 }
-
-console.log(generateDataset(10, 2))

@@ -8,3 +8,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+dataset = generateDataset(10, 2);
+
+findNearestNeighbors(dataset, dataset[2], 2);
