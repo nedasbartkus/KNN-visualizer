@@ -35,16 +35,5 @@ function findNearestNeighbors(dataset, currPoint, kValue) { // -> labeledPoint, 
   currPoint.label = winningLabel;
 
   // return the label of currPoint as well as the points that were used for the decision
-  // console.table(distances);
-  // console.log(winningLabel);
-  // console.table(usedPoints);
   return winningLabel, usedPoints;
 }
-
-const testDataset = [
-  { x: 20, y: 40, label: 0},
-  { x: 0, y: 0, label: 0 },
-  { x: 3, y: 4, label: 1 },
-  { x: 6, y: 8, label: 1 },
-]
-findNearestNeighbors(testDataset, { x: 0, y: 0 }, 2);
